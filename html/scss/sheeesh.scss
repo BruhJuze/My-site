@@ -1,0 +1,25 @@
+@use '_variables.scss' as v; // sass --watch scss/sheeesh.scss css/sheeesh.css
+
+body {background-color: lightblue; margin:0; padding:0;}
+header{
+    background-color: v.$colorp; height:30px;
+    #himg{
+        height:100%; width:100px;
+        object-fit: scale-down;
+        background-color: aqua;
+        //background-image: url(https://www.namebadgesinternational.us/library/design-advice/pp35-wide-logo.jpg);
+    }
+
+}
+.bbox{
+    background-color: darkseagreen;
+    height:15em; width: 75%;
+    display: flex; margin: auto; padding: 0px;
+
+    .content{
+        background-color: violet;
+        
+    }
+     
+
+}

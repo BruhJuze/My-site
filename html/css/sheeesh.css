@@ -1,0 +1,30 @@
+body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a001a;
+  height: 30px;
+}
+header #himg {
+  height: 100%;
+  width: 100px;
+  object-fit: scale-down;
+  background-color: aqua;
+}
+
+.bbox {
+  background-color: darkseagreen;
+  height: 15em;
+  width: 75%;
+  display: flex;
+  margin: auto;
+  padding: 0px;
+}
+.bbox .content {
+  background-color: violet;
+}
+
+/*# sourceMappingURL=sheeesh.css.map */
