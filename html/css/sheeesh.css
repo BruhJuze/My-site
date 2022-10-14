@@ -6,7 +6,12 @@ body {
 
 header {
   background-color: #1a001a;
-  height: 30px;
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 header #himg {
   height: 100%;
@@ -14,17 +19,28 @@ header #himg {
   object-fit: scale-down;
   background-color: aqua;
 }
+header #search {
+  margin: auto;
+  height: auto;
+  width: 30vw;
+}
 
 .bbox {
   background-color: darkseagreen;
-  height: 15em;
+  height: 90vh;
   width: 75%;
   display: flex;
   margin: auto;
   padding: 0px;
 }
-.bbox .content {
+.bbox #content {
   background-color: violet;
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  padding: 0 16px;
+  margin: auto auto;
 }
 
 /*# sourceMappingURL=sheeesh.css.map */
