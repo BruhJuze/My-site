@@ -1,0 +1,26 @@
+body {
+  flex-direction: none;
+  background-image: url("negative-space-black-forest-dawn.aa00099e.jpg");
+  background-position: 50% -500px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: scroll;
+  margin: 0;
+  display: flex;
+}
+
+body header {
+  height: 50px;
+  width: 100%;
+  background-color: #fff3;
+  justify-content: end;
+  display: flex;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.7323c1c2.css.map */
