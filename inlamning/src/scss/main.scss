@@ -1,4 +1,4 @@
-// 0px to 768px  
+// 0px to 768px        //tyvärr gick det inte så bra för mig :(
 @use 'variables' as v;
 @use "mixins" as m;
 
@@ -18,6 +18,10 @@ body{
         width: 100%;
         display: flex;
         justify-content: end;
+
+        #link{
+            width: 0; height: 0; visibility: hidden;
+        }
         
         
   .menu-btn {
@@ -46,10 +50,10 @@ body{
         animation: menu-click 2s infinite;
       }
       .menu-btn__burger::before {
-        transform: translateY(-16px); background-color: aqua;
+        transform: translateY(-16px); 
       }
       .menu-btn__burger::after {
-        transform: translateY(16px); background-color: red;
+        transform: translateY(16px); 
       }
 
 
@@ -217,6 +221,10 @@ body{
             gap:20px;
             text-decoration: none;
         }
+        
+
+        #link {width: auto; height: auto; visibility: visible;}
+
 
         #menu-btn {
             display: none;
@@ -239,7 +247,8 @@ body{
             h2 {
                 height: 10px;
                 text-align: center;
-                padding:0;
+                padding: 0;
+
                 
             }
 
