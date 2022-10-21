@@ -1,67 +1,287 @@
-// 0px to 768px    sass --watch scss/main.scss css/main.css 
+// 0px to 768px  
 @use 'variables' as v;
+@use "mixins" as m;
+
+html {
+    scroll-behavior: smooth;
+}
 
 body{
-    background-image: url(../assets/negative-space-black-forest-dawn.jpg);
-    background-size: auto;
-    background-attachment: fixed; 
-    background-position: center -500px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: none;
-    background-attachment: scroll;
+    height:100%;
     margin: 0;
-    flex-direction: column;
+    padding: 0;
 
-
+  }
     header{
         background-color: v.$headercolor;
-        height: 50px;
+        height: 6vh;
         width: 100%;
         display: flex;
         justify-content: end;
         
         
-    }
+  .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+      }
 
-    //google fonts
-  .material-symbols-outlined {
-  font-size: 50px;
-  
-  gap: 10px;
-  color: white;
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 100
-    }
+      .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background-color: white;
+        border-radius: 5px;
+      }
+      .menu-btn__burger::before,
+      .menu-btn__burger::after {
+        
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background-color: white;
+        border-radius: 5px;
+        animation: menu-click 2s infinite;
+      }
+      .menu-btn__burger::before {
+        transform: translateY(-16px); background-color: aqua;
+      }
+      .menu-btn__burger::after {
+        transform: translateY(16px); background-color: red;
+      }
+
+
+@keyframes menu-click {
+    
+     
+    
+}
 
         
-    main {
+    }
+
+    #home{
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     background-color: aquamarine;
+     background-image: url(../assets/negative-space-black-forest-dawn.jpg);
+     background-size: cover;
+     background-position: center;
+     flex-direction: column;
+     justify-content:flex-start;
+     flex-wrap: wrap;
+     
+     
+    }
+
+
+    .sectionhome{
+    color: white;
     display: flex;
-    justify-content:center;
+    margin: 5px;
+    padding: 5px;
     flex-direction: column;
-    align-items: center;
-    background-color: blue;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+    top: 20%;
+    padding: 20px; 
+        
+    h1{
+        font-size: 30px;
+    }
+
+    
+    
+    }
+
+    #arrowbtn1 {
+    display: flex;
+     color: white;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 90%;
+     text-align: center;
+     font-size: 25px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #profiles{
+        @include m.profilestyle;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto; 
+        
+        
+        
+        
+
+    }
+
+    a{
+        text-decoration: none;
+    }
+    #info {
+        background-color: silver;
+        
+        height: 150px;
+        width: 300px;
+        border-radius: 4%;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 10px;
+        padding-top: 30px;
+        
+        margin-top: 5%;
+        font-size: 17px;
+        text-align: left;
+        box-sizing: border-box;
+        
+        
+       
+        
+    }
+
+    .fa-quote-right{
+        font-size: xxx-large;
+        
+    }
+
+
+    .rakib{
+        background-image: url(../assets/profiles/Rakib_Square.png);
+    }
+    .alexandra{
+        background-image: url(../assets/profiles/Alexandra_Square.png); 
+    }
+    .lasse{
+        background-image: url(../assets/profiles/NoPerson_Square.png); 
+    }
+    .sebastian{
+        background-image: url(../assets/profiles/Sebastian_Square.png);
+    }
+
+    #arrowbtn2 {
+     display: flex;
+     color:black;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 5%;
+     text-align: center;
+     font-size: 25px;
+    }
+
+
+    footer {
+        background-color: black; 
+        height: 450px;
+        color: white;
+        margin-top: 10%;
+    }
+
+    #footersection {
+        padding-top: 5px;
+        padding-left: 60px;
+        font-size: 20px;
+
+    }
+
+    .footersection1{
+        top: 20px;
+    }
+        
     
 
-    .sectionmain{
-        color: white;
-        display: flex;  
-        margin:5px; padding:5px;
-        font-size: x-large;
-        align-items: center;
-        text-align: center;
+    .fa-brands {
+        margin-right: 10px;
+    } 
 
-        h4{
-        
+    @media screen and (min-width: 1200px){
+
+        header{
+            color: white;
+            display: flex;
+            align-items: center;
+            gap:20px;
+            text-decoration: none;
         }
+
+        #menu-btn {
+            display: none;
     }
-}
+
+        .menu-btn__burger{
+                display: none;
+            }
+
+        #arrowbtn1 {
+            
+             
+             flex-direction: column;
+             justify-content: center;
+             margin-top: 30%;
+             text-align: center;
+             font-size: 30px;
+            }
+
+            h2 {
+                height: 10px;
+                text-align: center;
+                padding:0;
+                
+            }
+
+            #arrowbtn2 {
+                display: flex;
+                color:black;
+                justify-content: end;
+                margin-top: 1%;
+                text-align: center;
+                font-size: 25px;
+               }
+
+        #about{
+        display: flex;
+        flex-direction:row;
+        position: relative;
+        flex-wrap: wrap;
+        }
+
+        #profiles{
+            @include m.profilestyle;
+            width: 450px;
+            height: 450px;
+        }
+
+        
+        #info {
+            width: 600px;
+        }
+
+        .profiledesktop{
+            margin: 100px;
+            justify-items: center;
+        }
+
+        footer{
+            display: flex;
+            align-items: center;
+            gap: 500px;
+            font-size: xx-large;
+        }
 
 
-}
-
-
- 
+    }
+        
