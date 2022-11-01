@@ -1,0 +1,32 @@
+body {
+  background-image: url(../assets/negative-space-black-forest-dawn.jpg);
+  background-color: aqua;
+  background-size: cover;
+  flex-direction: column;
+}
+body header {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 56px;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  text-align: right;
+}
+body #container {
+  background-color: white;
+  height: 400px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .footer {
+  background-color: black;
+  width: auto;
+  height: 400px;
+  position: fixed;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
