@@ -6,20 +6,20 @@ body{
     background-size: auto;
     background-attachment: fixed; 
     background-position: center -500px;
-    background-repeat: no-repeat;
+    //background-repeat: no-repeat;
     display: flex;
     flex-direction: none;
     background-attachment: scroll;
     margin: 0;
     flex-direction: column;
-
+}
 
     header{
         background-color: v.$headercolor;
         height: 50px;
         width: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: flex-start;
         
         
     }
@@ -40,10 +40,11 @@ body{
         
     main {
     display: flex;
-    justify-content:center;
     flex-direction: column;
-    align-items: center;
     background-color: blue;
+    border-style: solid;
+   
+    }
     
 
     .sectionmain{
@@ -51,17 +52,24 @@ body{
         display: flex;  
         margin:5px; padding:5px;
         font-size: x-large;
-        align-items: center;
-        text-align: center;
+        /*align-items: center;
+        text-align: center;*/
 
-        h4{
-        
-        }
     }
-}
 
 
-}
+    footer{
+        background-color: black;
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: auto;
+    }
+
+
+
+
 
 
  
