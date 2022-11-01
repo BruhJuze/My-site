@@ -1,0 +1,32 @@
+#container {
+  height: 700px;
+  width: 700px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  display: flex;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border: solid;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: #ff0;
+}
+
+#blue {
+  background-color: #00f;
+}
+
+/*# sourceMappingURL=index.b10d73a7.css.map */

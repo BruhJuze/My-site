@@ -7,9 +7,23 @@ html {
 }
 
 body{
+<<<<<<< HEAD
     height:100%;
     margin: 0;
     padding: 0;
+=======
+    background-image: url(../assets/negative-space-black-forest-dawn.jpg);
+    background-size: auto;
+    background-attachment: fixed; 
+    background-position: center -500px;
+    //background-repeat: no-repeat;
+    display: flex;
+    flex-direction: none;
+    background-attachment: scroll;
+    margin: 0;
+    flex-direction: column;
+}
+>>>>>>> 884587b3a30c4277d3c78dece06a842534c66d41
 
   }
     header{
@@ -17,7 +31,27 @@ body{
         height: 6vh;
         width: 100%;
         display: flex;
+<<<<<<< HEAD
         justify-content: end;
+=======
+        justify-content: flex-start;
+        
+        
+    }
+
+    //google fonts
+  .material-symbols-outlined {
+  font-size: 50px;
+  
+  gap: 10px;
+  color: white;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 100
+    }
+>>>>>>> 884587b3a30c4277d3c78dece06a842534c66d41
 
         #link{
             width: 0; height: 0; visibility: hidden;
@@ -27,6 +61,7 @@ body{
   .menu-btn {
     position: relative;
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -294,3 +329,38 @@ body{
 
     }
         
+=======
+    flex-direction: column;
+    background-color: blue;
+    border-style: solid;
+   
+    }
+    
+
+    .sectionmain{
+        color: white;
+        display: flex;  
+        margin:5px; padding:5px;
+        font-size: x-large;
+        /*align-items: center;
+        text-align: center;*/
+
+    }
+
+
+    footer{
+        background-color: black;
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: auto;
+    }
+
+
+
+
+
+
+ 
+>>>>>>> 884587b3a30c4277d3c78dece06a842534c66d41

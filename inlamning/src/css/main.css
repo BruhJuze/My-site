@@ -1,0 +1,54 @@
+body {
+  background-image: url(../assets/negative-space-black-forest-dawn.jpg);
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: center -500px;
+  display: flex;
+  flex-direction: none;
+  background-attachment: scroll;
+  margin: 0;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.material-symbols-outlined {
+  font-size: 50px;
+  gap: 10px;
+  color: white;
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 100;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  border-style: solid;
+}
+
+.sectionmain {
+  color: white;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  font-size: x-large;
+  /*align-items: center;
+  text-align: center;*/
+}
+
+footer {
+  background-color: black;
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: auto;
+}
+
+/*# sourceMappingURL=main.css.map */
