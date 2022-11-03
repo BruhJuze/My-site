@@ -3,8 +3,12 @@
   width: 700px;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: auto;
+  margin: 30px auto auto;
   display: flex;
+}
+
+#points {
+  width: 40px;
 }
 
 .box {
@@ -27,6 +31,20 @@
 
 #blue {
   background-color: #00f;
+}
+
+@keyframes bright {
+  0% {
+    filter: brightness(50%);
+  }
+
+  50% {
+    filter: brightness();
+  }
+
+  100% {
+    filter: brightness(50%);
+  }
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

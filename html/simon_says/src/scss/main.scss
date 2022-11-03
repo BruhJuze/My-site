@@ -5,16 +5,32 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 30px;
+}
+
+#points {
+    width: 40px;
 }
 
 .box {
     height: 300px;
     width: 300px;
     border: solid;
-
 }
 
 #green{background-color: green;}
-    #red{background-color: red;}
+    #red{background-color: red; }
     #yellow{background-color: yellow;}
     #blue{background-color: blue;}
+
+    @keyframes bright{
+     0%{
+        filter: brightness(50%);
+     }
+     50%{
+        filter: brightness(100%);
+     }
+     100%{
+        filter: brightness(50%);
+     }
+    }
